@@ -1,0 +1,24 @@
+hombres = 1494815
+mujeres = 1532128
+temp_media_anual = 25.45
+precipitacion_anual = 790.1
+culiacan = 33.15
+mazatlan = 16.57
+superficie = 57365
+
+suma_poblacion = hombres + mujeres
+suma_porcentajes = culiacan + mazatlan
+lista_climas = ["Calido","Subhúmedo","Seco","Semiseco"]
+
+print('\n'"La superficie del estado de sinaloa es:",superficie ,"Km2")
+
+print('\n'"La suma de la poblacion es:",suma_poblacion)
+
+print('\n'"La suma de los porsentajes es:",suma_porcentajes ,"%")
+
+print('\n'"La temperatura media es:",temp_media_anual,"Grados centigrados")
+
+print('\n'"La precipitación anual es:",precipitacion_anual)
+
+print('\n'"Climas")
+print("-",'\n- '.join(map(str, lista_climas)))
