@@ -1,0 +1,16 @@
+municipios = []
+habitantes = []
+suma_habitantes = 0
+promedio_habitantes = float(0)
+
+for x in range (3):
+  nom_municipio = str (input("Ingrese municipio: "))
+  municipios.append(nom_municipio)
+  num_habitantes = int (input("Ingrese el numero de habitantes del municipio: "))
+  habitantes.append(num_habitantes)
+
+suma_habitantes = sum(habitantes)
+print('\n',"El total de los habitantes es: ",suma_habitantes)
+
+promedio_habitantes = suma_habitantes / 3
+print('\n',"El promedio de habitantes es: ",promedio_habitantes)
