@@ -1,0 +1,19 @@
+peso_total = int(0)
+peso_cemento = 40
+peso_yeso = 30
+
+N_cost_cemento = int (input("Ingrese el numero de costales de cemento: "))
+N_cost_yeso = int (input("Ingrese el numero de costales de yeso: "))
+print('\n')
+
+cemento = N_cost_cemento * peso_cemento
+yeso = N_cost_yeso * peso_yeso
+
+peso_total = cemento + yeso
+
+if peso_total >= 1627 and peso_total <= 3254:
+  print("El peso total de los costales es: ", peso_total," kg")
+  print("¿Se puede realizar el envío?: Si")
+else:
+  print("El peso total de los costales es: ", peso_total," kg")
+  print("¿Se puede realizar el envío?: No")
