@@ -1,0 +1,45 @@
+costo_maiz = 285.55
+costo_pepino = 334.72
+costo_tomate = 129
+envio = 1500
+
+num_cajas = float (input("Ingrese el numero de cajas a vender: "))
+id_producto = int (input("Ingrese el ID del producto: "))
+print('\n')
+
+total_envio_maiz = (num_cajas * 285.55) + envio
+total_maiz = num_cajas * 285.55
+
+total_envio_pepino = (num_cajas * 334.72) + envio
+total_pepino = num_cajas * 334.72
+
+total_envio_tomate = (num_cajas * 129) + envio
+total_tomate = num_cajas * 129
+
+if id_producto == 1 :
+  print("El producto es: Maiz")
+  print("El precio por caja es: 285.55")
+  if num_cajas <= 100:
+    print("El costo total a pagar con envio es: ",total_envio_maiz)
+  else:
+    print("El costo total a pagar sin envio es: ", total_maiz)
+    
+if id_producto == 2 :
+  print("El producto es: Pepino")
+  print("El precio por caja es: 334.72")
+  if num_cajas <= 100:
+    print("El costo total a pagar con envio es: ",total_envio_pepino)
+  else:
+    print("El costo total a pagar sin envio es: ", total_pepino)
+
+if id_producto == 3 :
+  print("El producto es: Tomate")
+  print("El precio por caja es: 129")
+  if num_cajas <= 100:
+    print("El costo total a pagar con envio es: ",total_envio_tomate)
+  else:
+    print("El costo total a pagar sin envio es: ", total_tomate)
+
+if id_producto > 3:
+  print("ID no se encuentra, reinicie el programa")
+  
